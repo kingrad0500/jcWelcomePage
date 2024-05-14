@@ -68,14 +68,10 @@ footer .icons {
     border-radius: 10px;
     text-align: center;
     width: 50rem;
-    height: 30rem;
+    height: 10rem;
 }
 
 .popup h2 {
     margin-top: 0;
-}
-
-#policiesText {
-    max-height: 200px;
-    overflow-y: auto;
+    padding-bottom: 20px;
 }
