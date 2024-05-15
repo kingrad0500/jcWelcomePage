@@ -16,7 +16,7 @@
     <!--Pop up message-->
     <div id="overlay">
         <div class="popup">
-            <h2>Welcome to J&C Tropicals New Employee Page!</h2>
+            <h2>Welcome to J&C Tropicals New Employees Page!</h2>
             <label for="pinCode">
                 Please enter your PIN number to continue: <input type="text" name="pinCode" id="pinCode">
             </label>
@@ -27,15 +27,80 @@
 
 
     <!--Main content-->
-    <h1>Main Content</h1>
-    <p>The files coming here</p>
-    <ul>
-        <li>Document 1</li>
-        <li>Document 2</li>
-        <li>Document 3</li>
-        <li>Document 4</li>
-    </ul>
+    <div class="container-fluid main">
+        <h1 class="header-main">We're glad you're here with this awesome team!!</h1>
+        <h4 class="header-main">Please make sure to read all the files and sign all documents</h4>
+        <p>All documents needs to be sent to the HR department.</p>
 
+        <!--Table with the documents-->
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>File</th>
+                    <th>Require to fill document</th>
+                    <th>Require to sign</th>
+                    <th>Confirmation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><a id="newEmployeeDataDOC" href="./documents/New Employee Data.docx" download>New Employee
+                            Data</a></th>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td><button id="activateButton1" class="btn btn-warning viewButton" disabled>Revised</button></td>
+                </tr>
+                <tr>
+                    <th><a id="ninetyDays" href="./documents/90 days intro period.docx" download>90 Days Intro
+                            Period</a></th>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td><button id="activateButton2" class="btn btn-warning viewButton" disabled>Revised</button></td>
+                </tr>
+                <tr>
+                    <th><a id="backgroundAuth" href="./documents/Background_Authorization.doc" download>Background
+                            Authorization</a></th>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td><button id="activateButton3" class="btn btn-warning viewButton" disabled>Revised</button></td>
+                </tr>
+                <tr>
+                    <th><a id="empApplication" href="./documents/Employment application.pdf" download>Employment
+                            Application</a></th>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td><button id="activateButton4" class="btn btn-warning viewButton" disabled>Revised</button></td>
+                </tr>
+                <tr>
+                    <th><a id="formConsent"
+                            href="./documents/Forma de aviso y consentimiento del empleado lifting heavy objects forklift.docx"
+                            download>Form of Notice and Employee Consent</a></th>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td><button id="activateButton5" class="btn btn-warning viewButton" disabled>Revised</button></td>
+                </tr>
+                <tr>
+                    <th><a id="i9Form" href="./documents/i-9 2024.pdf" download>I-9 Form</a></th>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td><button id="activateButton6" class="btn btn-warning viewButton" disabled>Revised</button></td>
+                </tr>
+                <tr>
+                    <th><a id="preEmpConsent" href="./documents/Pre-Employment Drug Consent.doc" download>Pre-Employment
+                            Drug Consent</a></th>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td><button id="activateButton7" class="btn btn-warning viewButton" disabled>Revised</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--Link to the Jotform for send the documents-->
+        <div id="redirectLink" class="container-fluid redirectLink" style="display: none;">
+            <button class="btn btn-success"><a href="https://form.jotform.com/241355567577064" target="_blank">SEND
+                    DOCUMENTS HERE</a></button>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
