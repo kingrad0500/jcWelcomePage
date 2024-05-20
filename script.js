@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
     viewButtons.forEach(function (button) {
         button.addEventListener("click", function () {
             //Change the button text to "Viewed" when clicked
-            button.textContent = "Viewed";
+            button.textContent = "Ready";
             button.disabled = true; //Disable the button after is clicked
             activatedCount++; //Increment the count of the activated buttons
             checkActivation();

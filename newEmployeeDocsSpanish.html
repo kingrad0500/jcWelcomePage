@@ -28,8 +28,8 @@
 
     <!--Main content-->
     <div class="container-fluid">
-        <h1>Que bueno tenerte con nosotros!</h1>
-        <h4>Por favor asegurese de que haya leido y firmado todos los documentos.</h4>
+        <h1 class="header-main">Que bueno tenerte con nosotros!</h1>
+        <h4 class="header-main">Por favor asegurese de que haya leido y firmado todos los documentos.</h4>
         <p>Todos los documentos seran enviados al departamento de Recursos Humanos</p>
 
         <!--Table with the documents-->
@@ -37,56 +37,70 @@
             <thead>
                 <tr>
                     <th>Archivo</th>
-                    <th>Requiere llenar los campos</th>
-                    <th>Requiere firmar</th>
+                    <th>Requiere completar el documento</th>
+                    <th>Requiere firmar el documento</th>
                     <th>Confirmacion</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th>New Employee Data</th>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td><button class="btn btn-success">Ready</button></td>
+                    <th><a id="newEmployeeDataDOC" href="./documents/New Employee Data.docx" download>New Employee
+                            Data</a></th>
+                    <td>Si</td>
+                    <td>Si</td>
+                    <td><button id="activateButton1" class="btn btn-warning viewButton" disabled>He leido</button></td>
                 </tr>
                 <tr>
-                    <th>90 Days Intro Period</th>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td><button class="btn btn-success">Ready</button></td>
+                    <th><a id="ninetyDays" href="./documents/90 days intro period.docx" download>90 Days Intro
+                            Period</a></th>
+                    <td>Si</td>
+                    <td>Si</td>
+                    <td><button id="activateButton2" class="btn btn-warning viewButton" disabled>He leido</button></td>
                 </tr>
                 <tr>
-                    <th>Background Authorization</th>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td><button class="btn btn-success">Ready</button></td>
+                    <th><a id="backgroundAuth" href="./documents/Background_Authorization.doc" download>Background
+                            Authorization</a></th>
+                    <td>Si</td>
+                    <td>Si</td>
+                    <td><button id="activateButton3" class="btn btn-warning viewButton" disabled>He leido</button></td>
                 </tr>
                 <tr>
-                    <th>Employment Application</th>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td><button class="btn btn-success">Ready</button></td>
+                    <th><a id="empApplication" href="./documents/Employment application.pdf" download>Employment
+                            Application</a></th>
+                    <td>Si</td>
+                    <td>Si</td>
+                    <td><button id="activateButton4" class="btn btn-warning viewButton" disabled>He leido</button></td>
                 </tr>
                 <tr>
-                    <th>Form of Notice and Employee Consent</th>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td><button class="btn btn-success">Ready</button></td>
+                    <th><a id="formConsent"
+                            href="./documents/Forma de aviso y consentimiento del empleado lifting heavy objects forklift.docx"
+                            download>Form of Notice and Employee Consent</a></th>
+                    <td>Si</td>
+                    <td>Si</td>
+                    <td><button id="activateButton5" class="btn btn-warning viewButton" disabled>He leido</button></td>
                 </tr>
                 <tr>
-                    <th>I-9 Form</th>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td><button class="btn btn-success">Ready</button></td>
+                    <th><a id="i9Form" href="./documents/i-9 2024.pdf" download>I-9 Form</a></th>
+                    <td>Si</td>
+                    <td>Si</td>
+                    <td><button id="activateButton6" class="btn btn-warning viewButton" disabled>He leido</button></td>
                 </tr>
                 <tr>
-                    <th>Pre-Employment Drug Consent</th>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td><button class="btn btn-success">Ready</button></td>
+                    <th><a id="preEmpConsent" href="./documents/Pre-Employment Drug Consent.doc" download>Pre-Employment
+                            Drug Consent</a></th>
+                    <td>Si</td>
+                    <td>Si</td>
+                    <td><button id="activateButton7" class="btn btn-warning viewButton" disabled>He leido</button></td>
                 </tr>
             </tbody>
         </table>
+
+        <!--Link to the Jotform for send the documents-->
+        <div id="redirectLink" class="container-fluid redirectLink" style="display: none;">
+            <button class="btn btn-success"><a href="https://form.jotform.com/241355567577064" target="_blank">ENVIE SUS
+                    DOCUMENTOS AQUI</a></button>
+        </div>
+
     </div>
 
 
