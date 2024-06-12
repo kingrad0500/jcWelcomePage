@@ -136,6 +136,19 @@ footer .icons {
     footer {
         display: none;
     }
+
+    .main .header-main {
+        font-size: 18px;
+    }
+
+    .main p {
+        font-size: 15px;
+    }
+
+    th {
+        font-size: 13px;
+    }
+
 }
 
 @media only screen and (max-width:640px) {
@@ -173,6 +186,14 @@ footer .icons {
 
     footer {
         display: none;
+    }
+
+    .main .header-main {
+        font-size: 22px;
+    }
+
+    .main p {
+        font-size: 19px;
     }
 
 
