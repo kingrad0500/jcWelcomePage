@@ -1,7 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    /*height: 100%;*/
+}
+
+main nav {
+    width: 100%;
+}
+
+.navbar .content {
+    padding: 0 3.5rem;
 }
 
 .center-container {
@@ -17,9 +25,10 @@ body {
 }
 
 .wrapper {
-    min-height: 100%;
+    /*min-height: 100%;*/
     display: flex;
     flex-direction: column;
+    margin-bottom: 1.8rem;
 }
 
 .heading {
@@ -33,9 +42,7 @@ body {
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: #333;
+    background-color: #9fd654;
     color: white;
     padding: 30px;
     position: fixed;
@@ -46,6 +53,37 @@ footer {
 
 footer .icons {
     margin-left: 10px;
+}
+
+.footer-container {
+    padding: 0 3rem;
+}
+
+.footer-container .row .links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container .row .links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.footer-container .row .social-media-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container .row .company-logos {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-container .row .company-logos img {
+    width: 10rem;
 }
 
 /*pop-up message for employees pop-up*/
@@ -99,6 +137,13 @@ footer .icons {
 
 /*RESPONSIVE PART*/
 
+/*Height of device*/
+@media only screen and (max-height:833px) {
+    footer {
+        position: relative;
+    }
+}
+
 @media only screen and (max-width:455px) {
 
     /* smartphones, iPhone, portrait 480x320 phones */
@@ -134,7 +179,9 @@ footer .icons {
     }
 
     footer {
-        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
     }
 
     .main .header-main {
@@ -185,7 +232,9 @@ footer .icons {
     }
 
     footer {
-        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
     }
 
     .main .header-main {
@@ -199,7 +248,7 @@ footer .icons {
 
 }
 
-@media only screen and (max-width:854px) {
+@media only screen and (max-width:854px) and (min-height: 903px) {
 
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
     .wrapper {
@@ -233,7 +282,42 @@ footer .icons {
     }
 
     footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width:991px) {
+
+    footer {
+        position: relative;
+    }
+
+    .footer-container .row .social-media-icons {
         display: none;
     }
 
+    .footer-container .row .links {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1.7rem;
+    }
+
+    .footer-container .row .links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .footer-container .row .company-logos {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-container .row .company-logos img {
+        width: 8rem;
+    }
 }
