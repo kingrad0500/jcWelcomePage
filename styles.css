@@ -138,6 +138,23 @@ footer .icons {
     font-weight: bold;
 }
 
+/*FILES PAGE*/
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main img {
+    height: 270px;
+    width: 270px;
+}
+
+table tbody tr th a {
+    color: #379777;
+}
+
 /*RESPONSIVE PART*/
 
 /*Height of device*/
@@ -147,7 +164,8 @@ footer .icons {
     }
 }
 
-@media only screen and (max-width:455px) {
+@media only screen and (min-width:300px) and (max-width:640px) {
+    /*max-width:455*/
 
     /* smartphones, iPhone, portrait 480x320 phones */
     /*READY*/
@@ -187,12 +205,22 @@ footer .icons {
         left: 0;
     }
 
+    .main img {
+        height: 170px;
+        width: 170px;
+        padding-bottom: 25px;
+    }
+
     .main .header-main {
         font-size: 18px;
     }
 
-    .main p {
+    .main .header-second {
         font-size: 15px;
+    }
+
+    .main .paragraph {
+        font-size: 14px;
     }
 
     th {
