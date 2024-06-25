@@ -150,7 +150,7 @@ footer .icons {
 @media only screen and (max-width:455px) {
 
     /* smartphones, iPhone, portrait 480x320 phones */
-
+    /*READY*/
     .wrapper {
         min-height: 100%;
         display: flex;
@@ -204,6 +204,7 @@ footer .icons {
 @media only screen and (max-width:640px) {
 
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    /*READY*/
     .wrapper {
         min-height: 100%;
         display: flex;
@@ -311,6 +312,23 @@ footer .icons {
         justify-content: center;
     }
 
+    .center-container .logo-and-heading .jclogo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .center-container .logo-and-heading h1 {
+        font-size: 30px;
+    }
+
+    .center-container .buttons .new-employee a {
+        font-size: 20px;
+    }
+
+    .center-container .buttons .already-employee a {
+        font-size: 20px;
+    }
+
     footer {
         position: relative;
     }
@@ -362,6 +380,7 @@ footer .icons {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-right: 3rem;
     }
 
     .center-container .buttons {
@@ -399,6 +418,7 @@ footer .icons {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-right: 3rem;
     }
 
     .center-container .buttons {
