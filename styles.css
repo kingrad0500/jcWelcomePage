@@ -12,6 +12,16 @@ main nav {
     padding: 0 3.5rem;
 }
 
+.wrapper {
+    /*min-height: 100%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    margin-bottom: 1rem;
+}
+
 .center-container {
     margin: 0;
     display: flex;
@@ -19,21 +29,14 @@ main nav {
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 50%;
+    /*top: 50%;
     left: 50%;
-    transform: translate(-50%, -10%);
-}
-
-.wrapper {
-    /*min-height: 100%;*/
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1.8rem;
+    transform: translate(-50%, -10%);*/
 }
 
 .heading {
     font-size: 50px;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.7rem;
 }
 
 .jclogo {
@@ -215,9 +218,9 @@ footer .icons {
         align-items: center;
         justify-content: center;
         position: relative;
-        top: 50%;
+        /*top: 50%;
         left: 50%;
-        transform: translate(-55%, -5%);
+        transform: translate(-55%, -5%);*/
 
     }
 
@@ -251,44 +254,62 @@ footer .icons {
 @media only screen and (max-width:854px) and (min-height: 903px) {
 
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-    .wrapper {
-        min-height: 100%;
+    /*READY*/
+    .wrapper .center-container {
         display: flex;
         flex-direction: column;
+        width: 100%;
         align-items: center;
+        justify-content: center;
+        padding-bottom: 3rem;
     }
 
-    .wrapper .center-container {
-        margin: 0;
+    .center-container .logo-and-heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .center-container .buttons {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-55%, -5%);
-
-    }
-
-    .heading {
-        font-size: 25px;
-        padding-bottom: 1.5rem;
-    }
-
-    .jclogo {
-        height: 200px;
-        width: 200px;
     }
 
     footer {
         position: fixed;
-        bottom: 0;
-        left: 0;
+
     }
 }
 
+/*READY*/
 @media only screen and (max-width:991px) {
+    .wrapper .center-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 3rem;
+    }
+
+    .center-container .logo-and-heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .center-container .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
     footer {
         position: relative;
@@ -319,5 +340,79 @@ footer .icons {
 
     .footer-container .row .company-logos img {
         width: 8rem;
+    }
+}
+
+/*READY*/
+@media only screen and (min-width:992px) {
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper .center-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .center-container .logo-and-heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center-container .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .center-container .buttons .new-employee a {
+        font-size: 20px;
+    }
+
+    .center-container .buttons .already-employee a {
+        font-size: 20px;
+    }
+}
+
+/*READY*/
+@media only screen and (min-width:1130px) {
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper .center-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .center-container .logo-and-heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .center-container .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .center-container .buttons .new-employee a {
+        font-size: 20px;
+    }
+
+    .center-container .buttons .already-employee a {
+        font-size: 20px;
     }
 }
